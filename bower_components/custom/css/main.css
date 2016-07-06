@@ -1,0 +1,21 @@
+html * {
+  font-family: 'Chelsea Market', cursive !important;
+}
+
+.dark-primary-color    { background: #0288D1; }
+.default-primary-color { background: #03A9F4; }
+.light-primary-color   { background: #B3E5FC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5722; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+
+.like-counter {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  font-size: 22px;
+  color: white;
+}

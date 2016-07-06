@@ -1,0 +1,31 @@
+$first-color:            #3E4651;
+$second-color:           #FC5A58;
+$third-color:            #F2CA47;
+$fourth-color:           #3CB6A7;
+$fifth-color:            #8A877E;
+
+html * {
+  font-family: 'Chelsea Market', cursive !important;
+}
+
+.section-color {
+  &.section-dark-blue {
+    background-color: $first-color;
+  }
+
+  &.section-red {
+    background-color: $second-color;
+  }
+
+  &.section-yellow {
+    background-color: $third-color;
+  }
+
+  &.section-light-blue {
+    background-color: $fourth-color;
+  }
+
+  &.section-gray {
+    background-color: $fifth-color;
+  }
+}
