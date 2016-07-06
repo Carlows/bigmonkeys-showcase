@@ -21,8 +21,14 @@ server.listen(4000, function () {
 
 var likeCount = 0;
 
+
 io.on('connection', function (client) {
   console.log('Someone connected');
+
+  setInterval(function () {
+    likeCount = 0;
+    client.broadcast.emit('update', { count: likeCount });
+  }, 10000);
 
   client.on('likedPresentation', function (data) {
     likeCount++;
