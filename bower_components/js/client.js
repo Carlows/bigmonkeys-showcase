@@ -8,5 +8,11 @@
 
   socket.on('update', function (data) {
     $('#likeCount').html(data.count);
+
+    if(data.count % 2 == 0) {
+      $('.pepecontainer').html('<img src="happypepe.webp" alt="happypepe" class="pepe" />');
+    } else {
+      $('.pepecontainer').html('<img src="sadpepe.webp" alt="sadpepe" class="pepe" />');
+    }
   });
 } ())
