@@ -7,7 +7,7 @@
   });
 
   socket.on('update', function (data) {
-    $('#likeCount').html(data.count);
+    $('#likecounter').html(data.total);
 
     if(data.count > 5) {
       $('.pepecontainer').html('<img src="happypepe.webp" alt="happypepe" class="pepe" />');

@@ -1,5 +1,10 @@
 html * {
-  font-family: 'Chelsea Market', cursive !important;
+  font-family: 'Source Code Pro', monospace;
+  color: #424242 !important;
+}
+
+body {
+  background-color: #EEE;
 }
 
 .dark-primary-color    { background: #0288D1; }
@@ -11,7 +16,25 @@ html * {
 .secondary-text-color  { color: #727272; }
 .divider-color         { border-color: #B6B6B6; }
 
-.like-counter {
+.reveal section img {
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.slides > section > .monkeyimages {
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.slides > section > h1 {
+  color: #424242;
+}
+
+.pepeabsolute {
   position: absolute;
   left: 20px;
   bottom: 20px;

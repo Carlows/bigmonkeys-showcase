@@ -20,21 +20,23 @@ server.listen(4000, function () {
 });
 
 var likeCount = 0;
-
+var totalCount = 0;
+var interval;
 
 io.on('connection', function (client) {
   console.log('Someone connected');
 
-  setInterval(function () {
-    likeCount = 0;
-    client.broadcast.emit('update', { count: likeCount });
-  }, 10000);
+  if(interval == undefined) {
+    interval = setInterval(function () {
+      likeCount = 0;
+      client.broadcast.emit('update', { count: likeCount });
+    }, 20000);
+  }
 
   client.on('likedPresentation', function (data) {
     likeCount++;
+    totalCount++;
 
-    client.broadcast.emit('update', { count: likeCount });
-
-    console.log(likeCount);
+    client.broadcast.emit('update', { count: likeCount, total: totalCount });
   });
 });
