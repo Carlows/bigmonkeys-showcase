@@ -9,7 +9,7 @@
   socket.on('update', function (data) {
     $('#likecounter').html(data.total);
 
-    if(data.count > 5) {
+    if(data.count > 8) {
       $('.pepecontainer').html('<img src="happypepe.webp" alt="happypepe" class="pepe" />');
     } else {
       $('.pepecontainer').html('<img src="sadpepe.webp" alt="sadpepe" class="pepe" />');

@@ -26,7 +26,39 @@ html, body {
   background-color: #0073e5;
   color: white;
   border: 1px solid #005cb7;
+  width: 80%;
+
+
 }
+
+/* Extra Small Devices, Phones */ 
+  @media only screen and (min-width : 480px) {
+    #btn {
+      width: 60%;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    #btn {
+      width: 40%;
+    }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    #btn {
+      width: 25%;
+    }
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    #btn {
+      width: 20%;
+    }
+  }
+
 
 #btn:active {
   background-color: #0052a4;
