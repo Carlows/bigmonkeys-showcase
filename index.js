@@ -15,7 +15,7 @@ app.get('/monkeys', function (req, res, next) {
   res.sendFile(__dirname + '/monkeys.html');
 });
 
-server.listen(4000, function () {
+server.listen(process.env.PORT || 4000, function () {
   console.log('Listening on port 4000');
 });
 
