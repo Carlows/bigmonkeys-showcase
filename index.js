@@ -11,7 +11,7 @@ app.get('/', function(req, res,next) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/monkeys', function (req, res, next) {
+app.get('/pepe', function (req, res, next) {
   res.sendFile(__dirname + '/monkeys.html');
 });
 
